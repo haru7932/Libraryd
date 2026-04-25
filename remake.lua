@@ -1,5 +1,3 @@
---Minha Versão única - Magnus Modificações 
---Ser tive outro igual, e meu ramake rsrsrs
 local MarketplaceService = game:GetService("MarketplaceService")
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -83,7 +81,7 @@ local redzlib = {
     	    ["home"] = "rbxassetid://10723407389",
     	    ["truck"] = "rbxassetid://10747364031",
 			["headphones"] = "rbxassetid://10723406165",
-			["Drip"] = "rbxassetid://72495850369898",
+			["linux"] = "rbxassetid://72495850369898",
 			["flame"] = "rbxassetid://10723376114",
 			["shirt"] = "rbxassetid://10734952036",
 			["settings"] = "rbxassetid://10734950309",
@@ -1132,12 +1130,12 @@ end
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
 			Title = "Close",
-			Text = "Deseja realmente fechar o Drip Client? Ele contém recursos essenciais e fechar agora pode interromper funções importantes, causar falhas ou perder suas configurações. Cuidado antes de prosseguir!",
+			Text = "Deseja realmente fechar o Linux Hub? Ele contém recursos essenciais e fechar agora pode interromper funções importantes, causar falhas ou perder suas configurações. Cuidado antes de prosseguir!",
 			Options = {
-				{"Confirm", function()
+				{"Yes", function()
 					ScreenGui:Destroy()
 				end},
-				{"Cancel"}
+				{"No"}
 			}
 		})
 	end
@@ -3248,7 +3246,7 @@ end
 					end)
 				end
 				task.spawn(Callback, payload)
-				SendBtn.Text = "Report Enviado ✓"
+				SendBtn.Text = "Report Enviado"
 				SendBtn.BackgroundColor3 = Color3.fromRGB(67, 181, 129)
 				task.wait(3)
 				if SendBtn and SendBtn.Parent then
