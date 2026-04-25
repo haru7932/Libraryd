@@ -43,10 +43,10 @@ local redzlib = {
 			}),
 			["Color Hub 2"] = Color3.fromRGB(30, 30, 30),
 			["Color Stroke"] = Color3.fromRGB(40, 40, 40),
-			["Color Theme"] = Color3.fromRGB(179, 0, 255),
+			["Color Theme"] = Color3.fromRGB(100, 0, 0),
 			["Color Text"] = Color3.fromRGB(240, 240, 240),
 			["Color Dark Text"] = Color3.fromRGB(180, 180, 180),
-			["Color Dark Purple"] = Color3.fromRGB(179, 0, 255),
+			["Color Dark Purple"] = Color3.fromRGB(100, 0, 0),
 			["Color Hub 9"] = Color3.fromRGB(0, 0, 0, 0),
 			["Color Dark Greem"] = Color3.fromRGB(43, 255, 0)
 		}
@@ -659,7 +659,7 @@ function redzlib:Notify(Configs)
 	local Description = Configs[2] or Configs.Description or Configs.Text or ""
 	local Duration = Configs[3] or Configs.Duration or 5
 	local Type = Configs.Type or "Info"
-	local Image = Configs.Image or "rbxassetid://113449060491896"
+	local Image = Configs.Image or ""
 	
 	local Colors = {
 		Info = Color3.fromRGB(88, 101, 242),
@@ -1641,7 +1641,7 @@ end
 				Position = UDim2.new(1, -10, 0.5),
 				AnchorPoint = Vector2.new(1, 0.5),
 				BackgroundTransparency = 1,
-				Image = "rbxassetid://126463403744337"
+				Image = "rbxassetid://123514080392395"
 			})
 			
 			FButton.Activated:Connect(function()
