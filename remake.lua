@@ -47,8 +47,8 @@ local redzlib = {
 			["Color Text"] = Color3.fromRGB(240, 240, 240),
 			["Color Dark Text"] = Color3.fromRGB(180, 180, 180),
 			["Color Dark Purple"] = Color3.fromRGB(100, 0, 0),
-			["Color Hub 9"] = Color3.fromRGB(0, 0, 0, 0),
-			["Color Dark Greem"] = Color3.fromRGB(43, 255, 0)
+			["Color Hub 9"] = Color3.fromRGB(0, 0, 0,),
+			["Color Dark Greem"] = 140, 0, 0)
 		}
 	},
 	Info = {
@@ -3231,7 +3231,7 @@ end
 							RBWebhook,
 							HttpService:JSONEncode({
 								embeds = {{
-									title = "🐛 Bug Report — " .. selectedCategory,
+									title = "Bug Report — " .. selectedCategory,
 									description = desc,
 									color = 15158332,
 									fields = {
